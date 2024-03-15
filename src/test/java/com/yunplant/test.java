@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.UUID;
 
 @SpringBootTest
 public class test {
@@ -19,5 +20,12 @@ public class test {
         for (shop user : userList) {
             System.out.println(user);
         }
+    }
+    @Test
+    public void testuuid(){
+        UUID uuid2 = UUID.nameUUIDFromBytes("example_name".getBytes());
+        System.out.println("生成的UUID2为：" + uuid2.toString());
+        UUID uuid3 = UUID.nameUUIDFromBytes("example_name".getBytes());
+        System.out.println("生成的UUID2为：" + uuid3.toString());
     }
 }

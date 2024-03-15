@@ -4,4 +4,7 @@
     <select id="selectAll"  resultType="com.yunplant.Entity.shop">
         select * from shop
     </select>
+    <select id="selectById" resultType="com.yunplant.Entity.shop">
+        select * from shop where
+    </select>
 </mapper>
