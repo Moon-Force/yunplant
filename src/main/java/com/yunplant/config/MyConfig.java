@@ -12,7 +12,7 @@ public class MyConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //保留以前规则
         //自己写新的规则。
-        registry.addResourceHandler("/static/shopimg/**")
-                .addResourceLocations("classpath:/static/shopimg/");//映射的服务器存放图片目录。
+        registry.addResourceHandler("/static/shopimg/**","/static/goodimg/**")
+                .addResourceLocations("classpath:/static/shopimg/","classpath:/static/goodimg/");//映射的服务器存放图片目录。
     }
 }

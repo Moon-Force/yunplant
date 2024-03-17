@@ -16,4 +16,5 @@ public class goods {
     private Float price;
     private int stock;
     private int shop_id;
+    private String imgsrc;
 }

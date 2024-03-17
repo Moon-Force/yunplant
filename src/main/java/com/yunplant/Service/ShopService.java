@@ -16,7 +16,7 @@ public class ShopService {
     public List<shop> getShopList() {
         List<shop> shopList= shopMapper.selectAll();
         for(shop shop:shopList){
-            shop.setImagesrc("http://localhost:8080/static/shopimg/"+imgsrc_uuid(shop.getName(),shop.getId())+".png");
+            shop.setImagesrc("http://localhost:8080/static/shopimg/"+imgsrc_uuid(shop.getName(),shop.getId())+".jpg");
         }
         return shopList;
     }
